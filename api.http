@@ -1,0 +1,29 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Novo evento 2",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+POST http://localhost:3333/events/936726ec-dbac-4c77-aedf-6105274ad7be/attendees
+Content-Type: application/json
+
+{
+    "name": "Gustavo Monteiro",
+    "email": "gustavo_monteiro.20@hotmail.com"
+}
+
+###
+GET http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33
+
+###
+GET http://localhost:3333/attendees/3/badge
+
+###
+GET http://localhost:3333/attendees/1/check-in
+
+###
+GET http://localhost:3333/events/64a47b2d-d48b-4f0f-910b-7dd378df5a9e/attendees?query=bruno
